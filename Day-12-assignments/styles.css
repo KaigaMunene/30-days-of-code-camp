@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  border: 2px solid black;
+  background-color: #eee3cb;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+.page-text {
+  float: left;
+  width: 650px;
+}
+
+header {
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+}
+
+p {
+  word-spacing: 10px;
+  font-style: italic;
+  font-size: x-large;
+  text-align: justify;
+}
+
+img {
+  float: right;
+  background-color: #182747;
+  border-radius: 20px;
+  margin-left: 20px;
+  width: 40%;
+  height: 90vh;
+}
