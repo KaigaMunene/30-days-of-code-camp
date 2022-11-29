@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transitions and animation assignment</title>
+    <style>
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5rem
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(cubic-bezier(0, .86, 1, .05));
+        }
+
+        img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+        }
+
+        .rectangle {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: skyblue;
+            animation: myfirst 5s 1;
+            position: relative;
+            animation-direction: alternate;
+        }
+
+        @keyframes myfirst {
+            0% {
+                background: skyblue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background: green;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background: brown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background: skyblue;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="https://mdjunaidap.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F46dd3171-45b1-4da4-9f6a-1b9f2348cd94%2FUntitled.jpeg?table=block&id=390356a3-08b7-4794-a2ad-5f322c91f4b2&spaceId=858e5087-9a93-4268-b61a-72a222916afe&width=800&userId=&cache=v2"
+            alt="Code march logo">
+    </div>
+
+    <div class="rectangle">
+
+    </div>
+</body>
+
+</html>

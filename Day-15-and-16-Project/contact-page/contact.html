@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-page</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Code Academy</a>
+        <a class="nav-open" id="nav-open"><i class="fa-solid fa-bars"></i></a>
+    </header>
+
+    <nav class="hide">
+        <a href="#" class="nav-close" id="nav-close"><i class="fa-sharp fa-solid fa-rectangle-xmark"></i></a>
+        <div class="nav-links-social">
+            <span> <i class="fa-brands fa-facebook"></i></span>
+            <span> <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span> <i class="fa-brands fa-instagram"></i>
+            </span>
+        </div>
+        <div class="nav-content">
+            <a href="../home-page/home.html" class="nav-links">Home</a>
+            <a href="./services.html" class="nav-links">Services</a>
+            <a href="../work-page/work.html" class="nav-links">Work</a>
+            <a href="../contact-page/contact.html" class="nav-links">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <div class="text">
+            <h1>Contact Us</h1>
+            <p>If you are a developer and need assistance understanding Javascript or React, please contact me at
+                codemarch123@gmail.com</p>
+        </div>
+
+        <div class="container">
+            <div class="contact-inputs">
+                <input type="text" name="first-name" placeholder="First Name">
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" id="" cols="96" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </div>
+            <div class="contact-info">
+                <div class="address-info">
+                    <h1><i class="fa-regular fa-location-crosshairs"></i>Address</h1>
+                    <ol>
+                        <li>Shavige Malieshwara</li>
+                        <li>Hills, 1st Stage</li>
+                        <li>Kumaraswamy layout</li>
+                        <li>Bengaluru, Karnataka</li>
+                        <li>560078</li>
+                    </ol>
+                </div>
+                <div class="email-info">
+                    <h1><i class="fa-light fa-at"></i>Email</h1>
+                    <a href="#">codemarch123@gmail.com</a>
+                </div>
+                <div class="twitter">
+                    <h1><i class="fa-brands fa-twitter"></i>twitter</h1>
+                    <a href="#">Codemarch</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+
+</html>

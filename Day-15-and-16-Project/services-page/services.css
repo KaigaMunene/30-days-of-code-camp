@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo {
+  font-weight: 700;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  padding-right: 50%;
+  align-items: center;
+  background-color: gainsboro;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-links {
+  font-size: 1rem;
+  color: black;
+  padding: 0.2rem;
+}
+.nav-links:hover {
+  color: orangered;
+}
+
+.nav-links-social {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links-social span {
+  padding: 0.5rem;
+}
+
+.nav-links-social span i {
+  cursor: pointer;
+}
+
+.nav-links-social span i:hover {
+  color: orangered;
+  transition: all 0.3s ease;
+}
+
+.menu-open {
+  font-size: 1rem;
+  cursor: pointer;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 0.1rem;
+}
+.nav-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+article {
+  padding: 0.8rem;
+}
+
+img {
+  width: 5rem;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.8rem;
+  text-align: inherit;
+  padding: 1rem;
+}
+
+.html-card {
+  background-color: rgb(249, 249, 249);
+  padding: 10px;
+  box-shadow: 5px 10px 16px #b5b5b5;
+}

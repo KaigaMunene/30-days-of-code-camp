@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Responsive Web Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 1rem;
+        }
+
+        .container {
+            border: 2px solid black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+        main {
+            background-color: #33b5e5;
+            padding: 1rem;
+        }
+
+        .head {
+            color: white;
+        }
+
+        .info {
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            background-color: #33b5e5;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .text {
+            padding: 1rem;
+            letter-spacing: 2px;
+            margin: 1rem;
+
+
+        }
+        @media screen and (max-width: 480px){
+            body{
+                min-width: 380px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <h1 class="head">India</h1>
+        </main>
+        <div class="info">
+            <ul>
+                <li>Javascript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+            <div class="text">
+                <h1>Codemarch</h1><br>
+                <p>We help developers to understand javascript & React in depth.</p><br>
+                <p>We also provide web development tools & design resources.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

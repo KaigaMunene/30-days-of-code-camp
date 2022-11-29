@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header .logo {
+  font-weight: 700;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  padding-right: 50%;
+  align-items: center;
+  background-color: gainsboro;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-links {
+  font-size: 1rem;
+  color: black;
+  padding: 0.2rem;
+}
+.nav-links:hover {
+  color: orangered;
+}
+
+.nav-links-social {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links-social span {
+  padding: 0.5rem;
+}
+
+.nav-links-social span i {
+  cursor: pointer;
+}
+
+.nav-links-social span i:hover {
+  color: orangered;
+  transition: all 0.3s ease;
+}
+
+.nav-open {
+  font-size: 1rem;
+  cursor: pointer;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 0.1rem;
+}
+.nav-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.text h1 {
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+.text p {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-inputs {
+  width: 45rem;
+  height: 25rem;
+  padding: 1rem;
+  background-color: aliceblue;
+}
+
+.contact-inputs input {
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+.contact-inputs textarea {
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+button {
+  width: 41.5rem;
+  margin: 0.5rem;
+  color: #fff;
+  background-color: blue;
+  padding: 0.2rem;
+  border: none;
+}
+
+.contact-info {
+  background-color: aliceblue;
+  width: 20rem;
+  height: 25rem;
+  padding-top: 3rem;
+}
+
+.contact-info a {
+  color: #000;
+  padding-left: 4rem;
+}
+.contact-info h1 {
+  color: rgb(47, 47, 107);
+  font-size: 1.2rem;
+}
+
+.contact-info i {
+  padding: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.address-info li {
+  list-style: none;
+  text-align: justify;
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 480px){
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-close{
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .nav-links-social {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text h1{
+text-align: center;
+  }
+
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-inputs input {
+    width: auto;
+  }
+
+  button {
+    width: auto;
+  }
+  .contact-info {
+    width: 20rem;
+  }
+}
